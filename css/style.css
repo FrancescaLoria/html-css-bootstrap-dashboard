@@ -1,4 +1,11 @@
 /* COMMON */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
 /* layout */
 .ms_wrapper {
     height: 100vh;
@@ -11,21 +18,33 @@
     height: 80px;
     width: 100%;
     /* debug */
-    background-color: lightgrey;
+    background-color: #F8F9FA;
 }
 
 .ms_main {
     height: calc(100% - 80px);
     width: 100%;
-    background-color: lightgreen;
+    
 }
-
+/* sidebar */
 .ms_sidebar {
     width: 60px;
     height: 100%;
-    background-color: darkblue;
-    
+    background-color:#051E34;
+    background-image: url("../img/sidebar-bg.png");  
 }
+
+.ms_text-active {
+    display: none;
+}
+
+.ms_sidebar-ul {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+/* /sidebar */
+
 
 .ms_main-container {
     width: 100%;
@@ -41,7 +60,7 @@
 .ms_content {
     height: calc(100% - 200px);
     overflow-y: auto;
-    background-color: blueviolet;
+    background-color: #F8F9FA;
 }
 
 /* [RESPONSIVE] */
@@ -61,6 +80,10 @@
 
         .ms_sidebar {
             width: 150px;
+        }
+
+        .ms_text-active {
+            display: block;
         }
 
 }
