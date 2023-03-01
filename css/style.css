@@ -13,13 +13,39 @@ ul {
     /* debug */
     background-color: lightcoral;
 }
-
+/* HEADER */
 .ms_header {
     height: 80px;
     width: 100%;
     /* debug */
     background-color: #F8F9FA;
 }
+
+header > nav {
+    height: 100%;
+  }
+  
+header .img-container {
+    width: 15%;
+}
+
+header .input-container {
+    width: 70%;
+}
+
+header .icons-container {
+    width: 15%;
+}
+
+header img {
+    width: 100%;
+    max-width: 60px;
+}
+
+.ms_desktop-logo {
+    display: none;
+}
+/* /HEADER */
 
 .ms_main {
     height: calc(100% - 80px);
@@ -48,18 +74,41 @@ ul {
 
 .ms_main-container {
     width: 100%;
+    overflow-y: auto;
+    
 
 }
-
+/* BANNER */
 .ms_banner {
     width: 100%;
     background-color: #1B72E8;
-    height: 200px;
+    
 } 
 
+.ms_student {
+    line-height: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ms_btn {
+    background-color: rgba(33, 33, 33, 0.6);
+    border-radius: 25px;
+    font-size: 10px;
+    padding: 6px 10px
+}
+
+.ms_arrow {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+/* /BANNER */
+
 .ms_content {
-    height: calc(100% - 200px);
-    overflow-y: auto;
     background-color: #F8F9FA;
 }
 
@@ -67,13 +116,7 @@ ul {
 
 @media screen and (min-width: 768px) {
        
-        .ms_banner {
-            height: 150px;
-        }
-
-        .ms_content {
-            height: calc(100% - 150px);
-        }
+        
 }
 
 @media screen and (min-width: 992px) {
@@ -84,6 +127,16 @@ ul {
 
         .ms_text-active {
             display: block;
+        }
+
+        .ms_desktop-logo {
+            display: block;
+            max-width: unset;
+            padding-right: 20px;
+        }
+
+        .ms_mobile-logo {
+            display: none;
         }
 
 }

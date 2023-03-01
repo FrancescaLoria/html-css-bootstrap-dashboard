@@ -27,9 +27,26 @@
     <div class="ms_wrapper">
         <!-- header -->
         <header class="ms_header">
-            <div class="container">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="img-container">
+                        <img src="img/mobile-logo.png" alt="" class="ms_mobile-logo">
+                        <img src="img/logo.svg" alt="" class="ms_desktop-logo">
+                    </div>
 
-            </div>
+                    <div class="input-container">
+                        <input
+                          class="form-control me-2"
+                          type="search"
+                          placeholder="Search"
+                          aria-label="Search"
+                        />
+                      </div>
+          
+                      <div class="icons-container"></div>
+
+                </div>
+            </nav>
             
         </header>
         <!-- /header -->
@@ -37,7 +54,7 @@
         <!-- main content -->
         <main class="ms_main d-flex">
 
-            <!-- SiDEBAR-LEFT -->
+            <!-- SIDEBAR-LEFT -->
             <div class="ms_sidebar text-white position-relative">
 
                 <ul class="ms_sidebar-ul">
@@ -61,12 +78,48 @@
                 </div>
 
             </div>
-            <!--/ SiDEBAR-LEFT -->
+            <!--/ SIDEBAR-LEFT -->
 
 
             <div class="ms_main-container">
 
-                <div class="ms_banner">
+                <div class="ms_banner text-white py-3">
+                    <div class="container-fluid">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-4 order-md-3">
+                                <div class="ms_card d-flex justify-content-lg-end">
+                                    <div class="ms_student mt-4">Nuovo Studente</div>
+                                    <button type="button" class="btn btn-outline-light mt-4 ms-4"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 order-md-1">
+                                <div class="ms_card">
+                                    <div>
+                                        <span class="fs-4">Boolean</span>
+                                        <span class="ms-2"><a class="ms_btn" href="#">Piano plaze</a></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span>
+                                            <a class="ms_btn" href="#">3 app</a>
+                                        </span>
+                                        <span class="ms_arrow">
+                                            <i class="fa-solid fa-angles-right"></i>
+
+                                        </span>
+                                        <span class="ms-2">
+                                            <a class="ms_btn" href="#"><i class="fa-solid fa-plus"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 order-2">
+                                <div class="ms_card">
+                                    <div class="fs-6">Studenti online negli ultimi 30 minuti</div>
+                                    <div class="mt-2 fs-2">125</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
