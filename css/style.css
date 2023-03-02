@@ -88,7 +88,7 @@ header img {
     line-height: 35px;
 }
 
-a {
+.ms_banner a {
     text-decoration: none;
     color: inherit;
 }
