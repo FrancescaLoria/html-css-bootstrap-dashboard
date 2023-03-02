@@ -10,8 +10,7 @@ ul {
 .ms_wrapper {
     height: 100vh;
     width: 100%;
-    /* debug */
-    background-color: lightcoral;
+    
 }
 /* HEADER */
 .ms_header {
@@ -106,17 +105,44 @@ a {
     margin-left: 5px;
 }
 
+.ms_none {
+    display: none;
+}
+
 /* /BANNER */
 
 .ms_content {
     background-color: #F8F9FA;
 }
+/* table */
+.table img {
+    width: 8%;
+    max-width: 8%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ms_large {
+    width: 20%;
+}
+
+.ms_btn-large {
+    width: 16%;
+}
+
+.ms_col-none {
+    display: none;
+}
+/* /table */
+
 
 /* [RESPONSIVE] */
 
 @media screen and (min-width: 768px) {
        
-        
+    .ms_col-none {
+        display: table-cell;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -137,6 +163,14 @@ a {
 
         .ms_mobile-logo {
             display: none;
+        }
+
+        .ms_btn_display {
+            display: none;
+        }
+
+        .ms_none {
+            display: inline-block;
         }
 
 }
