@@ -1,176 +1,191 @@
 /* COMMON */
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 /* layout */
 .ms_wrapper {
-    height: 100vh;
-    width: 100%;
-    
+  height: 100vh;
+  width: 100%;
 }
 /* HEADER */
 .ms_header {
-    height: 80px;
-    width: 100%;
-    /* debug */
-    background-color: #F8F9FA;
+  height: 80px;
+  width: 100%;
+  /* debug */
+  background-color: #f8f9fa;
 }
 
 header > nav {
-    height: 100%;
-  }
-  
-header .img-container {
-    width: 15%;
+  height: 100%;
 }
 
-header .input-container {
-    width: 70%;
+header .img-container {
+  width: 15%;
+}
+
+header .input-group {
+  width: 70%;
 }
 
 header .icons-container {
-    width: 15%;
+  width: 15%;
 }
 
 header img {
-    width: 100%;
-    max-width: 60px;
+  width: 100%;
+  max-width: 60px;
+}
+
+header .icons-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header ul {
+  gap: 25px;
+  margin-bottom: 0;
+}
+
+header .fa-bell {
+  color: #ff8f00;
+}
+
+header .icons-container li:nth-child(-n + 3) {
+  display: none;
 }
 
 .ms_desktop-logo {
-    display: none;
+  display: none;
 }
 /* /HEADER */
 
 .ms_main {
-    height: calc(100% - 80px);
-    width: 100%;
-    
+  height: calc(100% - 80px);
+  width: 100%;
 }
 /* sidebar */
 .ms_sidebar {
-    width: 60px;
-    height: 100%;
-    background-color:#051E34;
-    background-image: url("../img/sidebar-bg.png");  
+  width: 60px;
+  height: 100%;
+  background-color: #051e34;
+  background-image: url("../img/sidebar-bg.png");
 }
 
 .ms_text-active {
-    display: none;
+  display: none;
 }
 
 .ms_sidebar-ul {
-    padding-left: 15px;
-    padding-top: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 /* /sidebar */
 
-
 .ms_main-container {
-    width: 100%;
-    overflow-y: auto;
-    
-
+  width: 100%;
+  overflow-y: auto;
 }
 /* BANNER */
 .ms_banner {
-    width: 100%;
-    background-color: #1B72E8;
-    
-} 
+  width: 100%;
+  background-color: #1b72e8;
+}
 
 .ms_student {
-    line-height: 35px;
+  line-height: 35px;
 }
 
 .ms_banner a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .ms_btn {
-    background-color: rgba(33, 33, 33, 0.6);
-    border-radius: 25px;
-    font-size: 10px;
-    padding: 6px 10px
+  background-color: rgba(33, 33, 33, 0.6);
+  border-radius: 25px;
+  font-size: 10px;
+  padding: 6px 10px;
 }
 
 .ms_arrow {
-    font-size: 13px;
-    margin-left: 5px;
+  font-size: 13px;
+  margin-left: 5px;
 }
 
 .ms_none {
-    display: none;
+  display: none;
 }
 
 /* /BANNER */
 
 .ms_content {
-    background-color: #F8F9FA;
+  background-color: #f8f9fa;
 }
 /* table */
 .table img {
-    width: 8%;
-    max-width: 8%;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.last-cell {
+  display: flex;
+  gap: 10px;
 }
 
 .ms_large {
-    width: 20%;
+  width: 20%;
 }
 
 .ms_btn-large {
-    width: 16%;
+  width: 16%;
 }
 
 .ms_col-none {
-    display: none;
+  display: none;
 }
 /* /table */
-
 
 /* [RESPONSIVE] */
 
 @media screen and (min-width: 768px) {
-       
-    .ms_col-none {
-        display: table-cell;
-    }
+  .ms_col-none {
+    display: table-cell;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .ms_sidebar {
+    width: 150px;
+  }
 
-        .ms_sidebar {
-            width: 150px;
-        }
+  .ms_text-active {
+    display: block;
+  }
 
-        .ms_text-active {
-            display: block;
-        }
+  .ms_desktop-logo {
+    display: block;
+    max-width: unset;
+    padding-right: 20px;
+  }
 
-        .ms_desktop-logo {
-            display: block;
-            max-width: unset;
-            padding-right: 20px;
-        }
+  .ms_mobile-logo {
+    display: none;
+  }
 
-        .ms_mobile-logo {
-            display: none;
-        }
+  .ms_btn_display {
+    display: none;
+  }
 
-        .ms_btn_display {
-            display: none;
-        }
+  .ms_none {
+    display: inline-block;
+  }
 
-        .ms_none {
-            display: inline-block;
-        }
-
+  header .icons-container li:nth-child(-n + 3) {
+    display: block;
+  }
 }
